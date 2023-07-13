@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Hospital.Management
 {
@@ -31,7 +24,7 @@ namespace Hospital.Management
             command.Parameters.AddWithValue("@p6", CmbGender.Text);
             command.ExecuteNonQuery();
             connection1.Connection().Close();
-            MessageBox.Show("Your registration has been completed. Your password is: "+TxtPassword.Text, "Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Your registration has been completed. Your password is: " + TxtPassword.Text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
