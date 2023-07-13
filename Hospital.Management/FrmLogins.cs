@@ -30,10 +30,5 @@ namespace Hospital.Management
             frm.Show();
             this.Hide();
         }
-
-        private void FrmLogins_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

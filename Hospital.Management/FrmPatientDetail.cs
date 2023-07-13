@@ -19,7 +19,6 @@ namespace Hospital.Management
         {
             LblTC.Text = tc;
 
-
             //  Pulling Name Surname 
             SqlCommand cmd = new SqlCommand("Select Name,Surname From Patients where TC=@p1", connection1.Connection());
             cmd.Parameters.AddWithValue("@p1", LblTC.Text);
@@ -67,7 +66,6 @@ namespace Hospital.Management
             SqlDataAdapter da = new SqlDataAdapter("Select * From Appointments where Branch= '" + CmbBranch.Text + "'" + " and Doctor='" + CmbDoctor.Text + "' and Status=0", connection1.Connection());
             da.Fill(dt);
             dataGridViewActive.DataSource = dt;
-
         }
 
         private void LnkInfoEdit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -41,7 +41,6 @@ namespace Hospital.Management
             SqlDataAdapter da = new SqlDataAdapter("Select * From Appointments where Doctor='" + LblNameSurname.Text + "'", connection1.Connection());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-
         }
 
         private void BtnAnnoncements_Click(object sender, EventArgs e)

@@ -18,7 +18,6 @@ namespace Hospital.Management
         private void FrmDoctorInfoEdit_Load(object sender, EventArgs e)
         {
             MskTC.Text = TCno;
-
             SqlCommand cmd = new SqlCommand("Select * From Doctors where TC=@p1", connection1.Connection());
             cmd.Parameters.AddWithValue("@p1", MskTC.Text);
             SqlDataReader dr = cmd.ExecuteReader();

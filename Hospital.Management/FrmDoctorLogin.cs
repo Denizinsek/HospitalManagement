@@ -31,7 +31,6 @@ namespace Hospital.Management
                 MessageBox.Show("Incorrect TC or Password");
             }
             connection1.Connection().Close();
-
         }
     }
 }

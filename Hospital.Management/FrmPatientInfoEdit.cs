@@ -43,7 +43,6 @@ namespace Hospital.Management
             cmd.ExecuteNonQuery();
             connection1.Connection().Close();
             MessageBox.Show("Your information has been updated: ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
         }
     }
 }

@@ -21,9 +21,7 @@ namespace Hospital.Management
             da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
 
-
             // Importing branch into ComboBox
-
             SqlCommand cmd = new SqlCommand("Select Name From Branches", connection1.Connection());
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())

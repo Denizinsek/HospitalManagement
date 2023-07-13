@@ -142,7 +142,6 @@
             this.Name = "FrmLogins";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lightning Hospital Login";
-            this.Load += new System.EventHandler(this.FrmLogins_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
